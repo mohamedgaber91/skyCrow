@@ -1,0 +1,14 @@
+@import "https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;800&display=swap";
+body { direction: rtl; font-family:'Almarai',sans-serif;font-weight:400; }
+.carousel  {direction: ltr;}
+.me-auto {  margin-left: auto !important; margin-right: initial !important}
+.navbar .getstarted, .navbar .getstarted:focus { margin-right: 30px; margin-left: initial; }
+#topbar .contact-info i { margin-left: 5px; margin-right: initial; }
+#topbar .contact-info .phone-icon { margin-right: 15px; margin-left: initial; }
+#hero h2, #hero .btn-get-started, h1, h2, h3, h4, h5 { font-family:'Almarai',sans-serif; }
+#hero .container { text-align: right; }
+.services .icon-box p { font-weight: 500; }
+.faq .faq-list .icon-help { left: 0; right: 20px; }
+.faq .faq-list .icon-show, .faq .faq-list .icon-close { left: 0; right: initial; }
+.rtl { direction: rtl; }
+.ltr { direction: ltr; }
