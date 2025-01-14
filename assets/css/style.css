@@ -270,3 +270,6 @@ section{padding:60px 0}
 @media (max-width: 1200px) {
 .faq .faq-list{padding:0}
 }
+.nav-content{
+    justify-content: space-between;
+}
