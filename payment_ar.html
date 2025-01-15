@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SkyCrow</title>
+  <meta content="SkyCrow" name="description">
+  <meta content="SkyCrow, سكاي كرو" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700|Poppins:300,400,500,600,700"
+    rel="stylesheet">
+
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/rtl.css" rel="stylesheet">
+  <link href="payment.css" rel="stylesheet">
+</head>
+
+<body>
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@skycrow.com</a>
+      </div>
+      <div class="social-links d-none d-md-block">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="payment_en.html" class="locale"> الانجليزية</a>
+      </div>
+    </div>
+  </section>
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">الرئيسية</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">عن الشركة</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">المميزات</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#testimonials">أراء العملاء</a></li> -->
+          <li><a class="nav-link scrollto" href="index.html#faq">اﻷسئلة الشائعة</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#contact">تواصل معنا</a></li> -->
+          <!-- <li><a class="getstarted scrollto" href="#about">أبدأ اﻷن</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <div class="payment-container">
+    <div class="container">
+      <h1>اختر وسيلة الدفع</h1>
+      <div class="payment-methods">
+        <div class="method" onclick="showForm('visa') ;selectMethod('visa')  ">
+          <img src="assets/img/payment/visa.jfif" alt="Visa">
+          <p>فيزا</p>
+        </div>
+        <!-- MasterCard -->
+        <div class="method" onclick="selectMethod('MasterCard') ; showForm('mastercard')">
+          <img src="assets/img/payment/master.jfif" alt="MasterCard">
+          <p>ماستركارد</p>
+        </div>
+        <!-- American Express -->
+        <div class="method" onclick="selectMethod('American Express') ; showForm('amex')">
+          <img src="assets/img/payment/american.jfif" alt="American Express">
+          <p>أمريكان إكسبرس</p>
+        </div>
+        <!-- Discover -->
+        <div class="method" onclick="selectMethod('Discover') ; showForm('discover')">
+          <img src="assets/img/payment/discover.jfif" alt="Discover">
+          <p>ديسكفر</p>
+        </div>
+
+        <div class="method" onclick="selectMethod('باي بال') ; showForm('paypal')">
+          <img src="assets/img/payment/paypal.jfif" alt="باي بال">
+          <p>باي بال</p>
+        </div>
+        <div class="method" onclick="selectMethod('تحويل بنكي') ; showForm('bank')">
+          <img src="assets/img/payment/bank.jfif" alt="تحويل بنكي">
+          <p>تحويل بنكي</p>
+        </div>
+        <div class="method" onclick=" showForm('vodafone-cash') ; selectMethod('vodafone') ">
+          <img src="assets/img/payment/vodafone.jfif" alt="Vodafone Cash">
+          <p>فودافون كاش</p>
+        </div>
+        <!-- Etisalat Cash -->
+        <div class="method" onclick="showForm('etisalat-cash') ; selectMethod('Etisalat') ">
+          <img src="assets/img/payment/etisalte.jfif" alt="Etisalat Cash">
+          <p>اتصالات كاش</p>
+        </div>
+
+      </div>
+      <div id="selected-method" class="selected-method">
+        <p>لم يتم اختيار وسيلة دفع بعد.</p>
+      </div>
+    </div>
+    <div id="payment-forms">
+      <!-- Visa Form -->
+      <form id="visa-form" class="payment-form hidden" onsubmit="processPayment(event, 'visa')">
+        <h2>تفاصيل بطاقة الائتمان</h2>
+        <input type="text" placeholder="رقم البطاقة" required>
+        <input type="text" placeholder="تاريخ الانتهاء (MM/YY)" required>
+        <input type="text" placeholder="الرمز السري (CVV)" required>
+        <button type="submit">ادفع الآن</button>
+      </form>
+      <!-- MasterCard Form -->
+      <form id="mastercard-form" class="payment-form hidden" onsubmit="processPayment(event, 'mastercard')">
+        <h2>تفاصيل بطاقة MasterCard</h2>
+        <input type="text" placeholder="رقم البطاقة" required>
+        <input type="text" placeholder="تاريخ الانتهاء (MM/YY)" required>
+        <input type="text" placeholder="الرمز السري (CVV)" required>
+        <button type="submit">ادفع الآن</button>
+      </form>
+      <!-- American Express Form -->
+      <form id="amex-form" class="payment-form hidden" onsubmit="processPayment(event, 'amex')">
+        <h2>تفاصيل بطاقة American Express</h2>
+        <input type="text" placeholder="رقم البطاقة (15 رقم)" maxlength="15" required>
+        <input type="text" placeholder="اسم حامل البطاقة" required>
+        <input type="text" placeholder="تاريخ الانتهاء (MM/YY)" required>
+        <input type="text" placeholder="رمز الأمان (CID - 4 أرقام)" maxlength="4" required>
+        <button type="submit">ادفع الآن</button>
+      </form>
+      <!-- Discover Form -->
+      <form id="discover-form" class="payment-form hidden" onsubmit="processPayment(event, 'discover')">
+        <h2>تفاصيل بطاقة Discover</h2>
+        <input type="text" placeholder="رقم البطاقة (16 رقم)" maxlength="16" required>
+        <input type="text" placeholder="اسم حامل البطاقة" required>
+        <input type="text" placeholder="تاريخ الانتهاء (MM/YY)" required>
+        <input type="text" placeholder="الرمز السري (CVV)" maxlength="3" required>
+        <button type="submit">ادفع الآن</button>
+      </form>
+      <!-- PayPal Form -->
+      <form id="paypal-form" class="payment-form hidden" onsubmit="processPayment(event, 'paypal')">
+        <h2>تفاصيل حساب PayPal</h2>
+        <input type="email" placeholder="البريد الإلكتروني لحساب PayPal" required>
+        <input type="password" placeholder="كلمة المرور" required>
+        <button type="submit">ادفع الآن</button>
+      </form>
+      <!-- Bank Transfer Form -->
+      <form id="bank-form" class="payment-form hidden" onsubmit="processPayment(event, 'bank')">
+        <h2>تفاصيل التحويل البنكي</h2>
+        <input type="text" placeholder="اسم البنك" required>
+        <input type="text" placeholder="رقم الحساب البنكي" required>
+        <input type="text" placeholder="اسم صاحب الحساب" required>
+        <input type="text" placeholder="رمز SWIFT/BIC" required>
+        <button type="submit">ادفع الآن</button>
+      </form>
+      <!-- Vodafone Cash Form -->
+      <form id="vodafone-cash-form" class="payment-form hidden" onsubmit="processPayment(event, 'vodafone-cash')">
+        <h2>تفاصيل فودافون كاش</h2>
+        <input type="text" placeholder="رقم الهاتف" required>
+        <button type="submit">ادفع الآن</button>
+      </form>
+
+      <!-- Etisalat Cash Form -->
+      <form id="etisalat-cash-form" class="payment-form hidden" onsubmit="processPayment(event, 'etisalat-cash')">
+        <h2>تفاصيل اتصالات كاش</h2>
+        <input type="text" placeholder="رقم الهاتف" required>
+        <button type="submit">ادفع الآن</button>
+      </form>
+    </div>
+  </div>
+
+
+  <footer id="footer">
+    <div class="container">
+      <h3>Sky Crow</h3>
+      <p>مشروع سكاي كرو</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; 2022 حقوق <strong><span>Sky Crow</span></strong>. جميع الحقوق محفوظة
+      </div>
+      <div class="credits">
+        تطوير <a href="#">Sky Crow</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="payment.js"></script>
+</body>
+
+</html>
