@@ -74,8 +74,8 @@ h1,h2,h3,h4,h5,h6{font-family:"Raleway",sans-serif}
 #hero .btn-get-started{font-family:"Raleway",sans-serif;font-weight:500;font-size:14px;letter-spacing:0px;display:inline-block;padding:14px 32px;border-radius:4px;transition:.5s;line-height:1;color:#fff;-webkit-animation-delay:.8s;animation-delay:.8s;background:#1b2457}
 #hero .btn-get-started:hover{background:#c92026}
 @media (max-width: 992px) {
-#hero{height:100vh}
-#hero .carousel-container{top:66px}
+/* #hero{height:100vh} */
+/* #hero .carousel-container{top:66px} */
 }
 @media (max-width: 768px) {
 #hero h2{font-size:28px}
@@ -273,3 +273,170 @@ section{padding:60px 0}
 .nav-content{
     justify-content: space-between;
 }
+
+/* نسخة الموبايل */
+@media (max-width: 768px) {
+    /* Header */
+    #header {
+        padding: 12px 0;
+        padding-bottom: 63px;
+        padding-top: 30px;    }
+  
+    #header .logo img {
+      height: 40px;
+    }
+    .container.top-bar-content.d-flex.justify-content-center.justify-content-md-between {
+        display: grid !important
+    ;
+        grid-template-columns: 30% 70% !important;
+    }
+    img.animate__animated.animate__fadeInUp{
+        margin-top: 51px;
+        width: 100% !important;
+        margin: auto !important;
+        margin-top: 50px !important;
+    }
+    .car-content {
+        display: block !important;
+    }
+    #hero .carousel-container {
+        display: flex
+    ;
+     
+        left: 10px;
+        right: 10px;
+    }
+    .row.no-gutters {
+        display: block;
+        text-align: center;
+    }
+    .row.no-gutters h5 {
+      margin-left: 5px;
+      margin-right: 5px;
+      line-height: 1.4;
+    }
+    .why-us .content-item span {
+        display: block;
+        font-size: 24px;
+        font-weight: 400;
+        width: 60px;
+        padding: 15px;
+        margin: auto;
+        text-align: center;
+        /* text-align: left; */
+        background-color: #f2cbcc;
+        margin-bottom: 20px;
+        /* margin-left: 20px; */
+        color: #0d185a;
+    }
+
+   #payment .container .payment-methods  .method img {
+        height: 34px;
+        margin-bottom: 10px;
+    }
+   #payment .container .payment-methods  {
+    margin-top: 0;
+    }
+    .social-links.d-md-block {
+        margin-right: 32px;
+    }
+    #topbar .social-links a {
+      
+        padding: 4px 8px;
+       
+    }
+    #topbar .social-links a.lang {
+      
+       margin-right: 20px;
+       
+    }
+    h2.animate__animated.animate__fadeInDown {
+        line-height: 1.7;
+    }
+    #header .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #header .navbar ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    #header .navbar ul li {
+      margin: 10px 0;
+    }
+  
+    #header .navbar ul li a {
+      padding: 10px;
+      display: block;
+      width: 100%;
+    }
+  
+    #header .mobile-nav-toggle {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  
+    /* Hero Section */
+    #hero {
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    #hero h2 {
+      font-size: 28px;
+    }
+  
+    #hero p {
+      font-size: 16px;
+    }
+  
+    #hero .btn-get-started {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  
+    /* Topbar */
+    #topbar {
+      font-size: 12px;
+      padding: 8px 0;
+    }
+  
+    #topbar .contact-info {
+      text-align: center;
+    }
+  
+    #topbar .social-links a {
+      font-size: 16px;
+    }
+    /* ظظظظظظظظ */
+    .navbar-mobile ul {
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: 15px;
+        bottom: auto;
+        left: 15px;
+        padding: 10px 0;
+        /* background-color: #616486; */
+        background-color: white;
+        overflow-y: auto;
+        transition: .3s;
+        text-align: center;
+    }
+    .navbar-mobile ul li:not(:last-child){
+        border-bottom: 1px solid #616486;
+    }
+    .navbar-mobile ul li a{
+/* background-color: #4f4747; */
+color: #e18591;
+
+    }
+    .navbar-mobile ul li a:hover{
+
+    }
+
+}
+  

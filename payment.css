@@ -21,20 +21,14 @@ background-color: #e0808314;
   }
   
   .payment-methods {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    display: grid
+    ;
+        grid-template-columns:20% 20% 20% 20% 20%;
+        margin-top: 40px;
   }
   
   .method {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 21px;
-    cursor: pointer;
-    text-align: center;
-    width: 45%;
-    transition: all 0.3s;
+text-align: center;
   }
   
   .method:hover {
