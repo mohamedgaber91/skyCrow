@@ -336,6 +336,14 @@ section{padding:60px 0}
         height: 34px;
         margin-bottom: 10px;
     }
+   #payment .container .payment-methods  .method p {
+
+        margin: 0;
+        font-size: 12px;
+    }
+    .section-title h2 {
+        font-size: 23px;
+    }
    #payment .container .payment-methods  {
     margin-top: 0;
     }
@@ -413,7 +421,6 @@ section{padding:60px 0}
     #topbar .social-links a {
       font-size: 13px;
     }
-    /* ظظظظظظظظ */
     .navbar-mobile ul {
         display: block;
         position: absolute;
