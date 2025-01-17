@@ -290,7 +290,7 @@ section{padding:60px 0}
         ;
                 grid-template-columns: 30% 70% !important;
                 gap: 28px;
-                margin: 27px;
+                margin: 9px;
     }
     img.animate__animated.animate__fadeInUp{
         margin-top: 51px;
