@@ -356,6 +356,9 @@ section{padding:60px 0}
         padding: 4px 8px;
        
     }
+    .steps .container .steps-content .steps-img{
+
+    }
     #topbar .social-links a.lang {
       
        margin-right: 30px;
@@ -450,3 +453,9 @@ color: #e18591;
 
 }
 
+img.steps-img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+  /* margin: auto; */
+}
