@@ -89,7 +89,7 @@ h1,h2,h3,h4,h5,h6{font-family:"Raleway",sans-serif}
 section{padding:60px 0}
 .section-bg{background-color:#f8fcf9}
 .section-title{text-align:center;padding-bottom:30px}
-.section-title h2{font-size:32px;font-weight:700;text-transform:uppercase;margin-bottom:20px;padding-bottom:20px;position:relative}
+.section-title h2{font-size:32px;font-weight:600;margin-bottom:20px;padding-bottom:20px;position:relative}
 .section-title h2::before{content:"";position:absolute;display:block;width:120px;height:1px;background:#ddd;bottom:1px;left:calc(50% - 60px)}
 .section-title h2::after{content:"";position:absolute;display:block;width:40px;height:3px;background:#1b2457;bottom:0;left:calc(50% - 20px)}
 .section-title p{margin-bottom:0;font-size:15px;color:#2a1659}
@@ -285,6 +285,7 @@ section{padding:60px 0}
     #header .logo img {
       height: 40px;
     }
+ 
     .container.top-bar-content.d-flex.justify-content-center.justify-content-md-between {
         display: grid !important
         ;
@@ -342,7 +343,7 @@ section{padding:60px 0}
         font-size: 12px;
     }
     .section-title h2 {
-        font-size: 23px;
+        font-size: 14px;
     }
    #payment .container .payment-methods  {
     margin-top: 0;
@@ -448,4 +449,4 @@ color: #e18591;
     }
 
 }
-  
+
